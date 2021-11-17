@@ -1,4 +1,4 @@
-import axios from "axios";
+const axios = require('axios');
 const url = "https://api3.binance.com/api/v3/avgPrice?symbol=";
 //const ticks = "XRPUSDT";
 const ticks = ["BTCUSDT", "USDTNGN", "ADAUSDT", "XRPUSDT"];
@@ -10,13 +10,13 @@ async function getBtc () {
     const rd = await parseInt(returnedPrice.data.price);
     
     return rd
-    //console.log(rd) 
+    //console.log(df) 
   }
   catch(error) {
     console.log (error)
   }
 }
-export default getBtc;
-//module.exports = getBtc;
+
+module.exports = getBtc;
 //nT
 //getBtc();

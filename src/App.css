@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+p.name{
+  margin-top: 4%;
+  margin-left: 38%;
+  color: red;
+}
